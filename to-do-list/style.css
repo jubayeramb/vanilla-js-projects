@@ -1,0 +1,64 @@
+:root {
+  --themeColor: #ffffff;
+  --secondaryColor: #f1f1f1;
+  --fontColor: #181818;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.5em;
+  background: var(--themeColor);
+  color: var(--fontColor);
+}
+.theme-changer {
+  width: 100%;
+  margin-right: 5em;
+  display: block;
+  text-align: right;
+  padding: 10px;
+}
+.theme-changer button {
+  width: 110px;
+  padding: 10px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  outline: none;
+}
+.default-theme-button {
+  color: #f1f1f1;
+  background: rgba(96, 129, 139, 0.795);
+}
+.dark-theme-button {
+  color: #181818da;
+  background: #f1f1f1;
+}
+main {
+  max-width: 768px;
+  height: 100vh;
+  background-color: var(--secondaryColor);
+  box-sizing: border-box;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.589);
+  border-radius: 10px;
+  margin: 1em auto 0;
+}
+header {
+  color: #181818;
+  text-align: center;
+  border-radius: 10px;
+  background-color: rgb(96, 129, 139);
+  padding: 1em 0;
+}
+.task-list {
+  margin-left: 1.5em;
+}
+
+.already-done {
+  text-decoration: line-through;
+}
+.font-style {
+  color: red;
+}
