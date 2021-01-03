@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Random Number</title>
+  <style>
+    *{
+      font-size: 1.2em;
+    }
+    body{
+      margin: 1.5em;
+    }
+    #progress{
+      font-size: 0.8em;
+    }
+  </style>
+</head>
+
+<body>
+
+    <label for="#name">Input Your Name: </label>
+    <br>
+    <input type="text" id="name" value="">
+    <br>
+    <label for="#number">Input Your Number: </label>
+    <br>
+    <input type="number" id="number" value="" maxlength="4" required>
+    <br>
+    <br>
+    <button onclick="showValue()">click</button>
+    <button onclick="resetEverything()">reset</button>
+    <br><br>
+    
+  </fieldset>
+    <span id="progress">(If you want to see the progress see the console)</span>
+    <p class="result-style" id="result"></p>
+
+  <script src="./test.js" charset="utf-8"></script>
+</body>
+
+</html>
