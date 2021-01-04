@@ -1,4 +1,4 @@
-const root = document.documentElement
+ const root = document.documentElement
 const userInput = document.getElementById("user-input");
 const button = document.getElementById("add-items");
 const ul = document.querySelector("ul");

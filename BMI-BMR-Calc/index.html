@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI/BMR Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="input-form">
+            <h3>BMI <del>BMR</del> Calculator</h3>
+            <div id="form">
+                <!-- <form> -->
+                    <!-- <p>
+                        <input type="radio" name="calculator-mode" id="calculator-mode"> <label for="calculator-mode">BMI</label>
+                        
+                        <input type="radio" name="calculator-mode" id="calculator-mode"> <label for="calculator-mode">BMR</label>
+                    </p> -->
+                    <span class="caption">Input your height:</span>
+                    <br>
+                    <input type="number" value="" id="height" placeholder="Height (inch)" required>
+                    <br> <br>
+                    <span class="caption">Input your Weight:</span>
+                    <br>
+                    <input type="number" value="" id="weight" placeholder="Weight (kg)" required>
+                    <br> <br>
+                    <div class="buttons">
+                        <button id="result">Result</button>
+                        <button id="reset">Reset</button>
+                    </div>
+                    <!-- </form> -->
+                </div>
+                    <div class="result-msg">
+                        <span>Your BMI score is: </span><span id="score"></span>
+                        <br>
+                        <p id="massage"></p>
+                    </div>
+                </div>
+            </div>
+            <script src="./app.js"></script>
+        </body>
+</html>
