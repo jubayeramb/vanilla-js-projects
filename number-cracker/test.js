@@ -13,7 +13,7 @@ showValue = () => {
     var yourNumber = numberField.value;
 
     // yourNumber is the value of the user input
-    if (yourNumber == 0) {
+    if (yourNumber.length == 0) {
         confirm("Please enter a number!");
     } else {
         // for loop for generating random number
@@ -33,7 +33,9 @@ showValue = () => {
     // Time calculation
     const endTime = new Date().getSeconds();
     var totalTime = endTime - startTime;
+    if (yourNumber != 0) {
     timeConsumption.innerHTML = "Total Time Consumption: " + totalTime + " seconds";
+    }
 } //end of the showValue function defination
 
 // Added ENTER key listener for number inpur field 

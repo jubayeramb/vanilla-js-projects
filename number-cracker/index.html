@@ -13,6 +13,23 @@
     body{
       margin: 1.5em;
     }
+    input[ type="number" ] {
+      width: 250px;
+    }
+    input[ type="number"]:invalid + span::after {
+      color: rgba(255, 0, 0, 0.5);
+      font-size: 1.4em;
+      content: "✖";
+      padding: 6px 4px 0px 8px;
+    }
+    input[ type="number"]:valid + span::after {
+      color: rgba(0, 128, 0, 0.5);
+      font-size: 1.4em;
+      content: "✓";
+      padding: 6px 4px 0px 8px;
+    }
+
+    
     #progress{
       font-size: 0.8em;
     }
@@ -23,11 +40,11 @@
 
     <label for="#name">Input Your Name: </label>
     <br>
-    <input type="text" id="name" value="">
+    <input type="text" id="name" value="" placeholder="(optional)">
     <br>
     <label for="#number">Input Your Number: </label>
     <br>
-    <input type="number" id="number" value="" maxlength="4" required>
+    <input type="number" id="number" value="" min="1" max="9999" placeholder="Maximum 4 digit!" required> <span id="validation-check"></span>
     <br>
     <br>
     <button onclick="showValue()" id="get-number-btn">get your number</button>
@@ -36,7 +53,7 @@
     
   </fieldset>
     <span id="progress">(If you want to see the progress see the console)</span>
-    <p class="result-style" id="result"></p>
+    <p id="result"></p>
     <span id="total-time"></span>
 
   <script src="./test.js" charset="utf-8"></script>
