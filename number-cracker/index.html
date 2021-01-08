@@ -5,6 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="author" content="Jubayer Al Mamun">
+  <meta name="description" content="JavaScript Projects, Pratices. Vanilla JavaScript. vanilla-js-projects-practices.">
+  <meta name="keywords"
+    content="JavaScript,Number Cracker, Password Cracker, JS, Vanilla JavaScript, Vanilla JS, js, JavaScript Projects, JavaScript Practices, vanilla-js-projects-practices, vanilla-js-projects-practices,">
   <title>Random Number</title>
   <style>
     *{
@@ -14,7 +18,7 @@
       margin: 1.5em;
     }
     input[ type="number" ] {
-      width: 250px;
+      width: 260px;
     }
     input[ type="number"]:invalid + span::after {
       color: rgba(255, 0, 0, 0.5);
@@ -33,6 +37,13 @@
     #progress{
       font-size: 0.8em;
     }
+    .copyright {
+    text-align: center;
+    font-size: 0.8em;
+}
+.copyright a{
+    text-decoration: none;
+}
   </style>
 </head>
 
@@ -44,7 +55,7 @@
     <br>
     <label for="#number">Input Your Number: </label>
     <br>
-    <input type="number" id="number" value="" min="1" max="9999" placeholder="Maximum 4 digit!" required> <span id="validation-check"></span>
+    <input type="number" id="number" value="" min="1" max="9999" placeholder="Maximum of 4 digit!" required> <span id="validation-check"></span>
     <br>
     <br>
     <button onclick="showValue()" id="get-number-btn">get your number</button>
@@ -55,6 +66,8 @@
     <span id="progress">(If you want to see the progress see the console)</span>
     <p id="result"></p>
     <span id="total-time"></span>
+    <br> <br> <br> <br> <br> <br>
+    <p class="copyright"><a href="https://www.instagram.com/jubayer_amb/">©Jubayer Al Mamun</a></p>
 
   <script src="./test.js" charset="utf-8"></script>
 </body>

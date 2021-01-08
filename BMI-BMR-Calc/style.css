@@ -78,3 +78,10 @@ body {
     text-align: center;
     color: #ffa600;
 }
+.copyright {
+    text-align: center;
+    font-size: 0.8em;
+}
+.copyright a{
+    text-decoration: none;
+}
