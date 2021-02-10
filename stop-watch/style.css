@@ -1,101 +1,151 @@
- @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Michroma&family=Orbitron&family=Quantico:ital@1&family=Wallpoet&display=swap');
-        body {
-            background-color: #0f111a;
-        }
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Michroma&family=Orbitron&family=Quantico:ital@1&family=Wallpoet&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@700&family=Goldman&family=Hanalei+Fill&display=swap");
 
-        .wrapper {
-            position: relative;
-            top: 10px;
-            max-width: 700px;
-            margin: 0 auto;
-            /* background-color: crimson; */
-        }
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(15, 17, 26);
+}
 
-        #stop-watch {
-            margin: 0 auto;
-            display: flex;
-            justify-content: center;
-            width: 300px;
-            height: 300px;
-            padding: 15px;
-            border-radius: 50%;
-            align-items: center;
-            font-size: 3.2em;
-            font-family: 'Audiowide', cursive;
-            font-family: 'Michroma', sans-serif;
-            font-family: 'Orbitron', sans-serif;
-            font-family: 'Quantico', sans-serif;
-            font-family: 'Wallpoet', cursive;
-            color: rgba(0, 8, 80, 0.89);
-            background-color: rgb(0, 126, 155);
-            box-shadow: 0 0 30px rgb(4, 0, 255);
-        }
-        #macroseconds{
-            font-size: 0.4em;
-        }
-         .buttons {
-             font-size: 1.8em;
-            display: flex;
-            justify-content: space-around;
-            margin: 30px auto;
-            width: 95%;
-            max-width: 700px;
-        }
+.progress {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  margin-bottom: 5px;
+}
+#progress-bar {
+    border-radius: 5px;
+  height: 10px;
+  width: 0;
+  background-color: rgba(0, 255, 213, 0.884);
+}
 
-        .buttons button {
-            position: relative;
-            margin: 0 5px;
-            font-size: 0.6em;
-            background: none;
-            color: rgb(255, 255, 255);
-            width: 150px;
-            padding: 1em;
-            outline: none;
-            border: 0.2px dotted #fff;
-        }
-        .buttons button:hover{
-            cursor: pointer;
-        }
-        .buttons button:active{
-            left: 1px;
-            bottom: 1px;
-            color: #ff0000;
-            border: 1px solid rgba(255, 96, 96, 0.815);
-        }
+.wrapper {
+  position: relative;
+  top: 10px;
+  max-width: 700px;
+  margin: 0 auto;
+  /* background-color: crimson; */
+}
 
-        .buttons button:nth-child(1) {
-            margin-left: 0;
-        }
+#stop-watch {
+  margin: 10px auto 0;
+  display: flex;
+  justify-content: center;
+  width: 300px;
+  height: 300px;
+  padding: 15px;
+  border-radius: 50%;
+  align-items: center;
+  font-size: 3.2em;
+  font-family: "Audiowide", cursive;
+  font-family: "Michroma", sans-serif;
+  font-family: "Orbitron", sans-serif;
+  font-family: "Quantico", sans-serif;
+  font-family: "Wallpoet", cursive;
+  color: rgba(0, 8, 80, 0.89);
+  background-color: rgb(0, 126, 155);
+  box-shadow: 0 0 30px rgb(4, 0, 255);
+}
+#macroseconds {
+  font-size: 0.4em;
+}
 
-        .buttons button:nth-child(4) {
-            margin-right: 0;
-        }
-        #time-laps{
-            color: #fff;
-        }
-        @media only screen and (max-width: 900px) {
-            .buttons button {
-            margin: 0 3px;
-            font-size: 0.6em;
-            width: 100px;
-            padding: 0.8em;
-            }
-              }
-        @media only screen and (max-width: 760px) {
-            #stop-watch {
-                width: 250px;
-                height: 250px;
-                font-size: 2.7em;
-            }
-            .buttons button {
-            margin: 0 4px;
-            font-size: 0.5em;
-            width: 80px;
-            padding: 0.5em;
-            }
+.buttons {
+  font-size: 1.8em;
+  display: flex;
+  justify-content: space-around;
+  margin: 30px auto;
+  width: 95%;
+  max-width: 700px;
+}
 
-        }
-        @media only screen and (max-width: 350px) {
+.buttons button {
+  position: relative;
+  margin: 0 5px;
+  font-size: 0.6em;
+  background: none;
+  color: rgb(255, 255, 255);
+  width: 150px;
+  padding: 1em;
+  outline: none;
+  border: 0.2px dotted #fff;
+  border-radius: 8px;
+}
+.buttons button:hover {
+  background-color: rgb(0, 0, 0);
+  color: rgb(201, 201, 201);
+  cursor: pointer;
+}
+.buttons button:active {
+  left: 1px;
+  bottom: 1px;
+  color: #ff0000;
+  border: 1px solid rgba(255, 96, 96, 0.815);
+}
 
+.buttons button:nth-child(1) {
+  margin-left: 0;
+}
 
-        }
+.buttons button:nth-child(4) {
+  margin-right: 0;
+}
+.laps {
+  position: absolute;
+  right: -20px;
+  height: 40vh;
+  width: 100%;
+  overflow: hidden;
+  overflow-y: auto;
+}
+#time-laps {
+  color: #fff;
+  font-size: 1.2em;
+}
+#author {
+  font-size: 1.2em;
+  font-family: "Goldman", monospace;
+  position: relative;
+  bottom: -450px;
+  text-align: center;
+}
+#author a {
+  color: rgb(110, 110, 110);
+  text-decoration: none;
+}
+#author a:hover {
+  text-decoration: underline;
+}
+@media only screen and (max-width: 900px) {
+  .buttons button {
+    margin: 0 3px;
+    font-size: 0.6em;
+    width: 100px;
+    padding: 0.8em;
+  }
+}
+@media only screen and (max-width: 760px) {
+  #progress-bar {
+    height: 5px;
+  }
+  #stop-watch {
+    width: 250px;
+    height: 250px;
+    font-size: 2.7em;
+  }
+  .buttons button {
+    margin: 0 4px;
+    font-size: 0.5em;
+    width: 80px;
+    padding: 0.5em;
+  }
+  .laps {
+    height: 30vh;
+  }
+  #author {
+    bottom: -220px;
+  }
+}
