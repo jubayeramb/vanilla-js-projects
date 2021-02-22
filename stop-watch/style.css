@@ -80,8 +80,6 @@ body {
   cursor: pointer;
 }
 .buttons button:active {
-  left: 1px;
-  bottom: 1px;
   color: #ff0000;
   border: 1px solid rgba(255, 96, 96, 0.815);
 }
@@ -94,7 +92,7 @@ body {
   margin-right: 0;
 }
 .laps {
-  position: absolute;
+  position: relative;
   right: -20px;
   height: 40vh;
   width: 100%;
@@ -109,7 +107,7 @@ body {
   font-size: 1.2em;
   font-family: "Goldman", monospace;
   position: relative;
-  bottom: -450px;
+  bottom: 5px;
   text-align: center;
 }
 #author a {
@@ -126,6 +124,12 @@ body {
     width: 100px;
     padding: 0.8em;
   }
+}
+@media only screen and (min-width: 760px) {
+.buttons button:active {
+  left: 1px;
+  bottom: 1px;
+}
 }
 @media only screen and (max-width: 760px) {
   #progress-bar {
@@ -146,6 +150,6 @@ body {
     height: 30vh;
   }
   #author {
-    bottom: -220px;
+    bottom: 0px;
   }
 }
