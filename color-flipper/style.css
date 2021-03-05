@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+:root{
+    --primary-color1: #063251;
+    --primary-color2: #49a6e9;
+    --primary-color3: #49a6e9;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #F1f5f8;
+    font-size: 1em;
+    font-family: "Roboto", sans-serif; 
+}
+header{
+    background-color: #ffffff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4); 
+}
+nav{
+    padding: 15px 10px;
+    margin: 0 auto;
+    max-width: 900px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+nav h4{
+    color: var(--primary-color2);
+    letter-spacing: 4px;
+    padding-left: 15px;
+}
+#color-code{
+    color: var(--primary-color3);
+    
+}
+nav ul li{
+    list-style-type: none;
+    font-size: 1.1em;
+    letter-spacing: 4px;
+    display: inline;
+    padding: 0 10px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: var(--primary-color1);
+}
+nav ul li a:hover{
+    color: var(--primary-color2);
+}
+.container{
+    max-width: 600px; 
+    margin: 0 auto;
+    position: relative;
+    top: 40vh;
+    text-align: center;
+}
+h2{
+    font-size: 2.2em;
+    letter-spacing: 5px;
+    padding: 20px 2px;
+    border-radius: 10px;
+    background-color: #222;
+    color: #fff;
+    margin-bottom: 1.5em;
+}
+#btn{
+    font-size: 1.2em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    padding: 10px 20px;
+    background: none;
+    border: 3px solid #222;
+    box-shadow: 1px 1px 5px rgba(100, 100, 100, 0.5);
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+#btn:hover{
+    background-color: #222;
+    color: #fff;
+}
+span{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+/* Class for toggling and adding border bottom in JS  */
+.bottom-border{
+     border-bottom: 3px solid var(--primary-color2);
+}
