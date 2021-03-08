@@ -25,6 +25,14 @@ const userData = [
         speech: `lorem ipsum dolor sitamet, consectetur adipiscing lorem ipsum dolor sitlorem ipsum dolor sit lorem ipsum dolor sit amet et lorem ipsum dolor sit lorem ipsum dolor sit amet lorem ipsum dolor
         sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet  lorem`
     },
+    {
+        id: 4,
+        imageUrl: `https://images.unsplash.com/photo-1604904612715-47bf9d9bc670?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80`,
+        name: 'Elle Marie',
+        profession: 'Full Stack Dev',
+        speech: `Sealed letters folded in intricate patterns have gone unread for more than 300 years, but now people have been able to tease out their contents with a combination of X-ray imaging and unfolding algorithms.
+            Such folded letters were common before the invention of the envelope.`,
+    },
 ];
 
 const prevBtn = document.querySelector('#prev');
