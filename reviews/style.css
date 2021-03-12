@@ -98,6 +98,7 @@ body {
 }
 .speech{
     margin: 20px auto;
+    height: 50px;
     color: #6a8081;
 }
 /* style for buttons  */
@@ -139,7 +140,7 @@ button{
 }
 @media only screen and (max-width: 760px){
     .speech{
-        height: 80px;
+        height: 90px;
     }
     .developer{
     bottom: 10px;
