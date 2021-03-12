@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+:root {
+  --primary-text-color: #222;
+  --primary-color: #49a6e9;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Robto", sans-serif;
+  font-size: 16px;
+}
+li {
+  list-style-type: none;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
+
+/* for both screen  size*/
+.navbar {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.logo {
+  font-size: 26px;
+  text-shadow: 0px 2px 5px rgba(20, 20, 20, 0.61);
+  font-weight: 500;
+  letter-spacing: 4px;
+  overflow: hidden;
+}
+.logo > span {
+  color: var(--primary-color);
+}
+.nav-menu li a {
+  display: block;
+  letter-spacing: 4px;
+  padding:1em 0.75em;
+  color: #656565;
+  transition: all 0.3s linear;
+}
+.nav-menu li a:hover {
+  color: var(--primary-color);
+}
+
+/* styling for social logos */
+.social-logo {
+  display: none;
+}
+
+/* design for hamburger */
+.hamburger {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.hamburger .hamburger-line {
+  height: 4px;
+  width: 100%;
+  border-radius: 3px;
+  background-color: var(--primary-color);
+  transition: all 0.3s linear;
+}
+.hamburger .hamburger-line::before,
+.hamburger .hamburger-line::after {
+  content: " ";
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  border-radius: 3px;
+  background-color: var(--primary-color);
+  transition: all 0.3s linear;
+}
+.hamburger .hamburger-line::before {
+  transform: translateY(-8px);
+}
+.hamburger .hamburger-line::after {
+  transform: translateY(8px);
+}
+.open .hamburger-line{
+  background-color: transparent;
+  transform: translateX(-10px);
+}
+.open .hamburger-line::before{
+  transform: rotate(45deg) translate(1px, -1px);
+}
+.open .hamburger-line::after{
+  transform: rotate(-45deg) translate(1px, 1px);
+}
+/* media queries for different screen size display */
+@media screen and (max-width: 767px) {
+  .nav-header {
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  padding: 10px;
+}
+/* toggle class for navbar menu using JS */
+.nav-menu{
+  height: 0;
+  overflow: hidden;
+  transition: all 0.35s linear;
+}
+
+.toggle-menu{
+  height: 200px;
+}
+
+
+.nav-menu li a {
+  padding-left: 20px;
+}
+  .nav-menu li a:hover {
+    background-color: #a5d8fcf8;
+    padding-left: 30px;
+  }
+
+}
+@media only screen and (min-width: 910px) {
+  .nav-menu li a{
+    padding: 1em 1.8em;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .navbar {
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .hamburger{
+    display: none;
+  }
+  .social-logo {
+    display: flex;
+  }
+
+  .social-logo li a {
+    padding: 0 5px;
+    color: var(--primary-color);
+    transition: all 0.3s linear;
+}
+.social-logo li a:hover{
+  color: #89c4ee;
+}
+  .nav-menu {
+    padding: 0 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
