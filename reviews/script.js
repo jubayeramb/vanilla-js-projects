@@ -60,7 +60,6 @@ nextBtn.addEventListener('click', function (e) {
 });
 
 // funcitionality for prev button click
-let p = userData.length;
 prevBtn.addEventListener('click', function (e) {
     if (n != 0) {
         n--;
